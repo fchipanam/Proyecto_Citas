@@ -70,4 +70,25 @@ void GestorCitas::guardarDatos(){
 	}
 }
 
+void GestorCitas::cargarDatos(){
+	ifstream archivo(Archivo_DB);//"citas_data.txt"
+	string linea;
+	if(archivo.is_open()){
+		while(getline(archivo,linea)){
+			stringstream ss(linea);
+			string segmento;
+			vector<string> datos;
+			while(getline(ss, segmento, '|')){
+				datos.push_back(segmento);
+			}
+			if(datos.size()>=7 && datos[0]=="P"){
+				Cita* c=new CitaPresencial(datos[1], datos[2], datos[3], stoi(datos[4]), datos[5], stoi(datos[6]));
+				listaCitas.push_back(c);
+			}
+		}
+		archivo.close();
+		cout<<"Datos cargados correctamente"<<endl;
+	}
+}
+
 #endif
