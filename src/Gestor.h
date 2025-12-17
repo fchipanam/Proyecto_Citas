@@ -91,4 +91,15 @@ void GestorCitas::cargarDatos(){
 	}
 }
 
+void GestorCitas::generarReporte(){
+	ofstream reporte(ArchivoReporte);//"reporte_citas.txt"
+	reporte<<"---REPORTE DE CITAS---"<<endl;
+	reporte<<"======================"<<endl;
+	for(const auto& cita:listaCitas){
+		reporte<<cita->obtenerDetalles()<<"-----------------\n";	
+	}
+	reporte.close();
+	cout<<"Reporte generado en: "<<ArchivoReporte<<endl;
+}
+
 #endif
