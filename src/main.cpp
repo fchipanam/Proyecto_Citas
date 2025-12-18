@@ -51,6 +51,17 @@ int main(){
         case 2:
             gestor.listarCitas();
             break;
+        case 3: {
+            string dniBusq;
+            cout << "Ingrese DNI a buscar: ";
+            getline(cin, dniBusq);
+            gestor.buscarPorDNI(dniBusq);
+            break;
+        }
+        case 4:
+            gestor.ordenarPorPrioridad();
+            gestor.listarCitas();
+            break;
         default:
             cout << "Opcion no valida" << endl;
         }
