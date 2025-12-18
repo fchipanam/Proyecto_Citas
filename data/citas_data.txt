@@ -1,0 +1,10 @@
+P|C001|71234567|Juan Perez|1|Medicina General|101
+P|C002|73456789|Maria Lopez|2|Pediatria|102
+P|C003|75678912|Carlos Rojas|3|Odontologia|103
+P|C004|77891234|Ana Torres|1|Traumatologia|104
+P|C005|70123456|Luis Mendoza|2|Cardiologia|105
+P|C006|72345678|Rosa Quispe|3|Ginecologia|106
+P|C007|74567891|Pedro Salazar|1|Neurologia|107
+P|C008|76789123|Elena Huaman|2|Oftalmologia|108
+P|C009|78912345|Miguel Castro|3|Dermatologia|109
+P|C010|79012346|Carmen Flores|1|Endocrinologia|110

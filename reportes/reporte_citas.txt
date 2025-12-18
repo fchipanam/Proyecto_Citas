@@ -1,0 +1,32 @@
+---REPORTE DE CITAS---
+======================
+ID: C001 | Paciente: Juan Perez (DNI: 71234567)
+   -> Tipo: Presencial | Consultorio: 101 | Especialidad: Medicina General | Prioridad: URGENCIA
+-----------------
+ID: C002 | Paciente: Maria Lopez (DNI: 73456789)
+   -> Tipo: Presencial | Consultorio: 102 | Especialidad: Pediatria | Prioridad: Normal
+-----------------
+ID: C003 | Paciente: Carlos Rojas (DNI: 75678912)
+   -> Tipo: Presencial | Consultorio: 103 | Especialidad: Odontologia | Prioridad: Baja
+-----------------
+ID: C004 | Paciente: Ana Torres (DNI: 77891234)
+   -> Tipo: Presencial | Consultorio: 104 | Especialidad: Traumatologia | Prioridad: URGENCIA
+-----------------
+ID: C005 | Paciente: Luis Mendoza (DNI: 70123456)
+   -> Tipo: Presencial | Consultorio: 105 | Especialidad: Cardiologia | Prioridad: Normal
+-----------------
+ID: C006 | Paciente: Rosa Quispe (DNI: 72345678)
+   -> Tipo: Presencial | Consultorio: 106 | Especialidad: Ginecologia | Prioridad: Baja
+-----------------
+ID: C007 | Paciente: Pedro Salazar (DNI: 74567891)
+   -> Tipo: Presencial | Consultorio: 107 | Especialidad: Neurologia | Prioridad: URGENCIA
+-----------------
+ID: C008 | Paciente: Elena Huaman (DNI: 76789123)
+   -> Tipo: Presencial | Consultorio: 108 | Especialidad: Oftalmologia | Prioridad: Normal
+-----------------
+ID: C009 | Paciente: Miguel Castro (DNI: 78912345)
+   -> Tipo: Presencial | Consultorio: 109 | Especialidad: Dermatologia | Prioridad: Baja
+-----------------
+ID: C010 | Paciente: Carmen Flores (DNI: 79012346)
+   -> Tipo: Presencial | Consultorio: 110 | Especialidad: Endocrinologia | Prioridad: URGENCIA
+-----------------
