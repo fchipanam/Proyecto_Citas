@@ -13,13 +13,45 @@ void mostrarMenu() {
     cout << "5. Generar Reporte TXT" << endl;
     cout << "6. Guardar y Salir" << endl;
     cout << "*Seleccione una opcion: " << endl;
-    cout << "-------------------------------------------" << endl;
 }
 
 int main(){
+    GestorCitas gestor;
+    gestor.cargarDatos();
     int opcion;
-    mostrarMenu();
-    cin >> opcion;
+
+    do {
+        mostrarMenu();
+        cin >> opcion;
+        cin.ignore();
+
+        switch (opcion) {
+        case 1: {
+            string dni, nombre, esp, id;
+            int prio, cons;
+            
+            cout << "Ingrese ID de Cita: ";
+            getline(cin, id);
+            cout << "DNI Paciente: ";
+            getline(cin, dni);
+            cout << "Nombre Paciente: ";
+            getline(cin, nombre);
+            cout << "Prioridad (1:Alta, 2:Media, 3:Baja): ";
+            cin >> prio;
+            cin.ignore();
+            cout << "Especialidad: ";
+            getline(cin, esp);
+            cout << "Numero de Consultorio: ";
+            cin >> cons;
+            Cita* nueva = new CitaPresencial(id, dni, nombre, prio, esp, cons);
+            gestor.registrarCita(nueva);
+            cout << ">> Cita registrada con exito." << endl;
+            break;
+        }
+        default:
+            cout << "Opcion no valida" << endl;
+        }
+    } while (opcion != 6);
 
     return 0;
 }
