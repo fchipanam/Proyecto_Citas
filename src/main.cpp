@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Citas.h"
 #include "Gestor.h"
-
+#include <cstdlib>
 using namespace std;
 
 void mostrarMenu() {
@@ -21,9 +21,17 @@ int main(){
     int opcion;
 
     do {
+    	system("cls");
         mostrarMenu();
         cin >> opcion;
         cin.ignore();
+        if(cin.fail()){
+    		cin.clear();
+    		cin.ignore(1000, '\n');
+    		cout << "Entrada invalida. Ingrese un numero del menu." << endl;
+    		system("pause");
+    		continue;
+		}
 
         switch (opcion) {
         case 1: {
@@ -46,31 +54,38 @@ int main(){
             Cita* nueva = new CitaPresencial(id, dni, nombre, prio, esp, cons);
             gestor.registrarCita(nueva);
             cout << ">> Cita registrada con exito." << endl;
+            system("pause");
             break;
         }
         case 2:
             gestor.listarCitas();
+            system("pause");
             break;
         case 3: {
             string dniBusq;
             cout << "Ingrese DNI a buscar: ";
             getline(cin, dniBusq);
             gestor.buscarPorDNI(dniBusq);
+            system("pause");
             break;
         }
         case 4:
             gestor.ordenarPorPrioridad();
             gestor.listarCitas();
+            system("pause");
             break;
         case 5:
             gestor.generarReporte();
+            system("pause");
             break;
         case 6:
             gestor.guardarDatos();
-            cout << "Saliendo del sistema..." << endl;
+            cout << endl << "Saliendo del sistema..." << endl;
             break;
         default:
             cout << "Opcion no valida" << endl;
+            system("pause");
+            break;
         }
     } while (opcion != 6);
 
