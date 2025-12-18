@@ -14,5 +14,40 @@ En cuanto a las relaciones entre clases, el sistema utiliza herencia entre Cita 
 
 El sistema emplea archivos de texto para el almacenamiento de información, donde el archivo citas\_data.txt conserva las citas registradas y el archivo reporte\_citas.txt genera un reporte detallado del estado del sistema.
 
+Pasos para ejecutar el programa
+
+    1. Verificar la estructura de carpetas
+        Asegúrese de que existan las carpetas:
+
+        -data/ para almacenar el archivo citas_data.txt
+
+        -reportes/ para generar el archivo reporte_citas.txt
+    2. Compilar el Programa
+        Desde la terminal, ubiquese en la carpeta del proyecto y ejecute:
+
+    3. Ejecutar el Programa
+        Una vez compilado ejecutar.
+            ./
+    4. Uso del menú principal. 
+
+        Al iniciar el programa se mostrará un menú que permite:
+
+        Registrar nuevas citas médicas
+
+        Listar todas las citas registradas
+
+        Buscar citas por DNI del paciente
+
+        Ordenar las citas según su prioridad
+
+        Guardar las citas en archivos de texto
+
+        Cargar citas previamente guardadas
+
+        Generar un reporte de citas  
+    5. Cierre del programa.
+
+    Al finalizar la ejecución, la memoria utilizada por las citas es liberada automáticamente mediante el destructor del gestor.  
+
 En conclusión, el proyecto presenta un diseño simple y modular que aplica correctamente los principios de la Programación Orientada a Objetos, facilitando la gestión eficiente de citas médicas.
 
