@@ -48,6 +48,9 @@ int main(){
             cout << ">> Cita registrada con exito." << endl;
             break;
         }
+        case 2:
+            gestor.listarCitas();
+            break;
         default:
             cout << "Opcion no valida" << endl;
         }
