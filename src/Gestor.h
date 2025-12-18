@@ -18,7 +18,12 @@ class GestorCitas{
     	void guardarDatos();
 	    void cargarDatos();
 	    void generarReporte();
-	    ~GestorCitas();
+	    ~GestorCitas(){
+			for (auto c : listaCitas) {
+        	delete c;
+    		}
+    		listaCitas.clear();
+		}
 };
 
 void GestorCitas::registrarCita(Cita* nuevacita){

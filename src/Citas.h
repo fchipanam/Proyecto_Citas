@@ -48,9 +48,9 @@ class CitaPresencial : public Cita{
             if(prioridad==1){
                 descPrioridad="URGENCIA";
             }else if(prioridad==2){
-                descPrioridad=="Normal";
+                descPrioridad="Normal";
             }else{
-                descPrioridad=="Baja";
+                descPrioridad="Baja";
             }
             return "ID: " + id + " | Paciente: " + nombrePaciente + " (DNI: " + dniPaciente + ")\n" + "   -> Tipo: Presencial | Consultorio: " + to_string(numeroConsultorio) +" | Especialidad: " + especialidad + " | Prioridad: " + descPrioridad + "\n";
         }
