@@ -84,8 +84,6 @@ int main(){
             break;
         default:
             cout << "Opcion no valida" << endl;
-            system("pause");
-            break;
         }
     } while (opcion != 6);
 

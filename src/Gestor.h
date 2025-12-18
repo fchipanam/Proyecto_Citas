@@ -8,8 +8,8 @@
 class GestorCitas{
 	private:
     	vector<Cita*> listaCitas;
-   		string Archivo_DB="citas_data.txt";
-    	string ArchivoReporte="reporte_citas.txt";
+   		string Archivo_DB="../data/citas_data.txt";
+    	string ArchivoReporte="../reportes/reporte_citas.txt";
 	public:
     	void registrarCita(Cita*);
     	void listarCitas();
