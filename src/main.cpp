@@ -62,6 +62,13 @@ int main(){
             gestor.ordenarPorPrioridad();
             gestor.listarCitas();
             break;
+        case 5:
+            gestor.generarReporte();
+            break;
+        case 6:
+            gestor.guardarDatos();
+            cout << "Saliendo del sistema..." << endl;
+            break;
         default:
             cout << "Opcion no valida" << endl;
         }
